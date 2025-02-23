@@ -1,0 +1,179 @@
+body {
+	color: #FFF;
+	overflow: hidden;
+}
+a{
+	color: #FFF;
+	text-decoration: none;
+}
+/*-- Wrapper section --*/
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(rgba(0, 0, 50, 0.8),rgba(0, 0, 50, 0.8)), url(image/cover.jpg);
+}
+.wrapper-item {
+	padding-top: 15%;
+}
+.wrapper-item .btn-left,.btn-right {
+	padding: 7.5px 15px;
+	border: none;
+	border-radius: 4px;
+}
+.wrapper-item .btn-left,.btn-right {
+	margin: 15px;
+}
+.wrapper-item .btn-left {
+	background: transparent;
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+.wrapper-item .btn-left:hover {
+	color: #444;
+	border: none;
+	background: #FFF;
+	transition: 0.5s ease;
+}
+.wrapper-item .btn-right:hover {
+	color: #FFF;
+	transition: 0.5s ease;
+	border: 1px solid #FFF;
+	background: transparent;
+}
+@media (max-width: 428px) {
+	.wrapper-item {
+		padding-top: 80vh;
+	}
+}
+/*-- Navbar section --*/
+.nav-link:hover {
+	color: #999;
+	transition: 0.3s;
+}
+.nav-btn {	
+	color: #FFF;
+	margin-top: -10px;
+	padding: 5px 10px;
+	border-radius: 50px;
+	border: 1px solid #FFF;
+	background: transparent;
+}
+.nav-btn:hover {
+	color: black;
+	background: #FFF;
+	transition: 0.3s;
+}
+.fa-bars {
+    color: #FFF;
+    border-radius: 4px;
+    padding: 2.5px 5px;
+    border: 1px solid #FFF;
+}
+@media (max-width: 884px) {
+	.navbar {
+	    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5));
+	}
+}
+@media (max-width: 428px) {
+	.navbar {
+	    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5));
+	}
+}
+/* -- Mobile searchbar design -- */
+.openBtn {
+    color: #fff;
+    float: right;
+    border: none;
+    font-size: 25px;
+    background: transparent;
+}
+.openBtn:hover {
+	color: #999;
+	transition: 0.3s;
+	font-size: 30px;
+}
+.overlay {
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: none;
+	position: fixed;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+}
+.overlay-content {
+	top: 40%;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	position: relative;
+	text-align: center;
+}
+.overlay .closebtn {
+	right: 50%;
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+	position: absolute;
+}
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+.overlay input[type=search] {
+	background: white;
+	position: absolute;
+	border-radius: 50px;
+	padding-left: 100px;
+}
+.overlay form button {
+	float: left;
+	height: 100vh;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: transparent;
+    border-right: 1px solid;
+}
+.overlay form button .fa-search {
+	margin-top: 10px;
+}
+.overlay input[type=search],.overlay button{
+	border: none;
+	font-size: 17px;
+}
+.overlay button:hover {
+}
+@media (max-width: 884px) {
+	.openBtn {
+		padding: 0;
+	    text-align: left;
+	}
+}
+@media (max-width: 428px) {
+	.openBtn {
+		padding: 0;
+	    text-align: left;
+	}
+}
+/*-- Cart section --*/
+.Cart {
+	margin: 15px 0;
+	border-radius: 15px 15px 0 0;
+    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5));
+}
+.Cart-item h3{
+	padding: 15px 0;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+.Cart-layer {
+	padding: 15px;
+}
